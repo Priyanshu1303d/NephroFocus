@@ -13,6 +13,7 @@ import { BsArrowRight } from "react-icons/bs";
 import About from "../Components/About/About";
 import Services from "../pages/Services";
 import ServiceList from "../Components/Services/ServiceList";
+import DoctorList from "../Components/Doctors/DoctorList";
 
 const Home = () => {
   return (
@@ -175,9 +176,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* --------------about section start------ */}
       <About />
-      {/* --------------about section end------ */}
 
       {/* -------------services Section------------ */}
       <section>
@@ -261,8 +260,25 @@ const Home = () => {
 
 
       {/* ----------------Our great Doctors------------------ */}
-      
+      <section>
+        <div className="container">
+        <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">Our Great Doctors</h2>
+            <p className="text__para text-center">
+              World-class care for everyone. Our health System offers
+              unmatched,expert health care.
+            </p>
+          </div>
+          <DoctorList />
+        </div>
+      </section>
       {/* ----------------Our great Doctors end------------- */}
+
+      {/* ---------faq section-------------- */}
+
+      
+      {/* ---------faq section end-------------- */}
+
     </>
   );
 };
