@@ -9,7 +9,6 @@ import featureImg from "../assets/images/feature-img.png";
 import videoIcon from "../assets/images/video-icon.png";
 import avatarIcon from "../assets/images/avatar-icon.png";
 import faqImg from "../assets/images/faq-img.png";
-
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 import About from "../Components/About/About";
@@ -17,6 +16,7 @@ import Services from "../pages/Services";
 import ServiceList from "../Components/Services/ServiceList";
 import DoctorList from "../Components/Doctors/DoctorList";
 import FaqList from "../Components/Faq/FaqList";
+import Testimonial from "../Components/Testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -297,7 +297,19 @@ const Home = () => {
 
 
       {/* -----------testimonial------------ */}
-
+        <section>
+          <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">What our patients say</h2>
+            <p className="text__para text-center">
+              World-class care for everyone. Our health System offers
+              unmatched,expert health care.
+            </p>
+          </div>
+          
+          <Testimonial />
+          </div>
+        </section>
       {/*-----------testimonial end----------*/}
 
     </>
