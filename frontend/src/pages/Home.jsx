@@ -17,6 +17,7 @@ import ServiceList from "../Components/Services/ServiceList";
 import DoctorList from "../Components/Doctors/DoctorList";
 import FaqList from "../Components/Faq/FaqList";
 import Testimonial from "../Components/Testimonial/Testimonial";
+import Eyes from "../Components/Eyes/Eyes";
 
 const Home = () => {
   return (
@@ -312,6 +313,22 @@ const Home = () => {
         </section>
       {/*-----------testimonial end----------*/}
 
+
+      {/* --------Eyes----------- */}
+      <section>
+          <div className="container">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">Our Backbone Kidney</h2>
+            <p className="text__para text-center">
+              World-class care for everyone. Our health System offers
+              unmatched,expert health care.
+            </p>
+          </div>
+          
+          <Eyes />
+          </div>
+        </section>
+        {/* --------------eyes-end------- */}
     </>
   );
 };

@@ -9,8 +9,26 @@
 
 body{
   font-family: "Manrope", sans-serif;
+  
 }
 
+.scroll{
+  overflow: hidden;
+}
+
+
+/* styles.css */
+/* Add border style for the links */
+/* styles.css */
+.footer-link {
+  border-bottom: 2px solid transparent;
+  transition: transform 250ms cubic-bezier(0.1, 0.2, 0.3, 0.4);/* Added transition for transform property */
+}
+
+.footer-link:hover {
+  border-color: #fff;
+  transition: transform 250ms cubic-bezier(0.1, 0.2, 0.3, 0.4); /* Move the link 10px to the right on hover */
+}
 
 
 
