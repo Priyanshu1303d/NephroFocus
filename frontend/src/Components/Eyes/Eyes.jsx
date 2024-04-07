@@ -27,7 +27,7 @@ function Eyes() {
 
   return (
     <div className="eyes w-full h-screen overflow-hidden">
-      <div data-scroll data-scroll-speed="-.7" className='relative w-full h-full bg-center bg-[url("https://t4.ftcdn.net/jpg/01/13/34/81/240_F_113348197_LLN5MIbnPZcxxNI6BWmfjyRRwbDYDCeP.jpg")] object-cover bg-cover'>
+      <div data-scroll data-scroll-speed="-.7" className='relative left-[7%] w-[90%] h-[90%] bg-center bg-[url("https://media.istockphoto.com/id/1127168444/vector/kidney-vector-illustration-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=x7cy1AGTmjC1_RqTFPl896a5sl2vx5o0ORdscugsYjo=")] object-cover bg-cover'>
         <div className="absolute flex gap-10 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] ">
           <div className="w-[15vw] h-[15vw] rounded-full bg-zinc-100 flex items-center justify-center overflow-hidden">
             <div

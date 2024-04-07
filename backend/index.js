@@ -22,7 +22,6 @@ app.get("/", (req, res) => {
 });
 
 //database connection
-
 mongoose.set("strictQuery", false);
 const connectDB = async () => {
   try {
@@ -33,6 +32,8 @@ const connectDB = async () => {
     console.log("MongoDB databse is connection failed: " + error);
   }
 };
+
+
 
 //middleware
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../assets/images/logo.png'
+import logo from "../../assets/images/logo-1.png"
 import { RiLinkedinFill} from 'react-icons/ri'
 import {AiFillYoutube , AiFillGithub , AiOutlineInstagram} from 'react-icons/ai'
 
@@ -77,11 +77,10 @@ const Footer = () => {
   const year = new Date().getFullYear()
 
   return <footer className='bg-zinc-500 border-t border-solid border-[#181A1E] text-white pb-16 pt-10'>
-    <div className="container">
-      <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[30px]">
-        <div>
-          <img src={logo} alt="" />
-          {/* copyright symbol lagana h */}
+    <div className=" relative container">
+      <div className="flex justify-between flex-col md:flex-row flex-wrap gap-[20px]">
+        <div className=''>
+        <img src={logo} className='absolute w-[250px] h-[250px] mt-[80px] left-[-10px]' alt="" />
           <p className='text-[16px] leading-7 font-[400]  mt-4'>Copyright &#169; {year} developed by TeamSupra all rights reserved</p>
           <div className='flex items-center gap-3 mt-4'>
             {socialLinks.map((link,index)=><Link to={link.path} key={index} className='w-9 h-9 border border-solid border-[#181A1E] rounded-full flex items-center justify-center group hover:bg-primaryColor hover:border-none'>{link.icon}</Link>)}

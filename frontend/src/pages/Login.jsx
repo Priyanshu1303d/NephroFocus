@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import { BASE_URL } from '../config';
 import { toast } from 'react-toastify'
-import { authContext } from '../context/AuthContext.jsx';
+import { authContext } from '../context/AuthContext';
 import HashLoader from 'react-spinners/HashLoader'
 
 const Login = () => {

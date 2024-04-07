@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import heroImg01 from "../assets/images/hero-img01.png";
 import heroImg02 from "../assets/images/hero-img02.png";
 import heroImg03 from "../assets/images/hero-img03.png";
@@ -18,8 +18,13 @@ import DoctorList from "../Components/Doctors/DoctorList";
 import FaqList from "../Components/Faq/FaqList";
 import Testimonial from "../Components/Testimonial/Testimonial";
 import Eyes from "../Components/Eyes/Eyes";
+import { useTypewriter } from 'react-typewriter-hook';
 
 const Home = () => {
+
+
+  
+  
   return (
     <>
       {/* -----------hero section------ */}
@@ -29,23 +34,22 @@ const Home = () => {
             {/* ---------hero content--------- */}
             <div>
               <div className="lg:w-[570px]">
-                <h1 className="text-[36px] leading-[46px] text-headingColor font-[800] md:text-[60px] md:leading-[70px]">
-                  We help patiends live a healthy, longer life.
+                <h1 className="text-[40px] tracking-tight text-headingColor font-[800] md:text-[60px] md:leading-[70px]">
+                  Unlock Your Health Journey: <br />
+                  <span className="text-[30px] ">
+                            Empowering Patients Towards Wellness.
+                    </span> 
                 </h1>
-                <p className="text__para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                  amet, explicabo aspernatur odit eaque voluptatum sint cumque
-                  magni ad ex, iure quam, eius atque dignissimos perspiciatis
-                  optio veniam voluptas labore at? Veritatis culpa molestiae
-                  officia!
+                <p className="text__para mb-16">
+                Reach out to us today to discover how our specialized services can elevate your kidney health and transform your life. Your kidneys deserve the utmost care, and we're here to deliver it with expertise and compassion.
                 </p>
-                <button className="btn rounded-xl">
-                  Request an Appointment
-                </button>
+                <Link to="/scan" className="btn pt-4 rounded-full">
+                  CT Image Scanner
+                </Link>
               </div>
 
               {/* ----------hero counter-------- */}
-              <div className="mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]">
+              {/* <div className="mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]">
                 <div>
                   <h2
                     className="text-[36px] leading-[56px] lg:text-[44px] lg:leading-[54px] font-[700]
@@ -78,7 +82,7 @@ const Home = () => {
                   <span className="w-[100px] h-2 bg-irisBlueColor rounded-full block mt-[-14px] "></span>
                   <p className="text__para">Patient Satisfaction</p>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="flex gap-[30px] justify-end">
@@ -96,7 +100,7 @@ const Home = () => {
 
       {/* -----------hero section end------ */}
 
-      <section>
+      {/* <section>
         <div className="container">
           <div className="lg:w-[470px] mx-auto">
             <h2 className="heading text-center">
@@ -178,7 +182,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <About />
 
@@ -205,18 +209,17 @@ const Home = () => {
             {/* ---------feature content-------- */}
             <div className="xl:w-[670px]">
               <h2 className="heading">
-                GetVirtual Treatment <br /> anytime.
+                Get Result for Kidney <br />CT Scans.
               </h2>
               <ul className="pl-4">
                 <li className="text__para">
-                  1. Schedule the appointment directly
+                1. Available at your convenience.
                 </li>
                 <li className="text__para">
-                  2. Search for your physician here, and contact their office
+                2. Input images anytime, anywhere and get result.
                 </li>
                 <li className="text__para">
-                  3. View our physicians who are accepting new patients, use the
-                  online scheduling tool to select an appointment time.
+                3. Swift Health Guidance at Hand.
                 </li>
               </ul>
               <div className="w-full mt-10 p-6">
@@ -269,7 +272,7 @@ const Home = () => {
         <div className="xl:w-[470px] mx-auto">
             <h2 className="heading text-center">Our Great Doctors</h2>
             <p className="text__para text-center">
-              World-class care for everyone. Our health System offers
+              Our health System offers
               unmatched,expert health care.
             </p>
           </div>
@@ -320,15 +323,14 @@ const Home = () => {
           <div className="xl:w-[470px] mx-auto">
             <h2 className="heading text-center">Our Backbone Kidney</h2>
             <p className="text__para text-center">
-              World-class care for everyone. Our health System offers
-              unmatched,expert health care.
+              Learn while having fun and test your kidney knowledge
             </p>
           </div>
           
           <Eyes />
           </div>
         </section>
-        {/* --------------eyes-end------- */}
+        {/* --------------eyes-end--------- */}
     </>
   );
 };
